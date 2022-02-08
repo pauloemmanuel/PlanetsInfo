@@ -7,9 +7,10 @@
 }
 
 body{
-    background-color: #000115;
+    background-image: url('./images/background-stars.svg');
     overflow-x: hidden;
     padding:0;
+    background-color: rgb(31, 9, 53);
     margin:0;
 }
 
@@ -23,8 +24,8 @@ header{
     padding:10px;
     align-items: center;
     border-bottom: 1px solid rgb(199, 199,199);
-   
-}
+    margin-bottom: 10px;
+}   
 
 nav{
     display:flex;
@@ -34,7 +35,7 @@ ul{
  
 }
 .title{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
     padding-left: 50px;
 }
@@ -76,7 +77,8 @@ li:hover.mercury{
             
 /* Estilização da Main */
 main{
-    width: 1440px;
+    width: 1024px;
+   
     margin:auto;
     color:white;
     max-width: 80vw;
@@ -86,31 +88,36 @@ main{
 }
 
 .planet-image{
-    flex:3;
-    height: 50vh;
-    background-image: url('./images/planets/terra.png');
+    flex:2;
+  
+     margin-top: 50px;
+    margin-right: 20px;
+    background-image: url('./images/planets/planet-earth.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 main section{
-    flex:2;
-    max-width: 300px;
+    flex:1;
+    max-width: 350px;
+    margin-left:30px;
+     
 }
 
 main section h2{
-    font-size: 2.4rem;
+    font-size: 4rem;
     margin-top:20px;
     text-transform: uppercase;
     max-width: 200px;
     margin-bottom: 15px;
+    font-weight: 400;
     
 }
 main section .description{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height:1.2rem;
-    text-align: left;
+    text-align: left;                                   
     color:rgba(218, 218, 218, 0.925);
 }
 main section .source{
@@ -134,7 +141,7 @@ main section .source a:focus{
 /* Botoes */
 
 .buttons{
-    height: 110px;
+    height: 160px;
     margin-top:20px;
     display:flex;
     justify-content: space-between;
@@ -148,7 +155,8 @@ main section .source a:focus{
     background-color: rgb(108, 47, 221) !important;
 }
 .buttons button{
-    padding:5px;
+    padding:12px;
+    font-size: 1rem;
     display:flex;
     background-color:transparent;
     border:1px solid rgba(255, 255, 255, 0.568);
