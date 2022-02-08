@@ -24,7 +24,7 @@ header{
     padding:10px;
     align-items: center;
     border-bottom: 1px solid rgb(199, 199,199);
-    margin-bottom: 10px;
+  
 }   
 
 nav{
@@ -106,17 +106,17 @@ main section{
 }
 
 main section h2{
-    font-size: 4rem;
-    margin-top:20px;
+    font-size: 3rem;
+    margin-top:5px;
     text-transform: uppercase;
     max-width: 200px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-weight: 400;
     
 }
 main section .description{
     font-size: 1rem;
-    line-height:1.2rem;
+    line-height:1.4rem;
     text-align: left;                                   
     color:rgba(218, 218, 218, 0.925);
 }
@@ -173,4 +173,11 @@ main section .source a:focus{
 .buttons button div{
    
     font-family: 'Rajdhani', sans-serif;
+}
+
+
+/* Parte de baixo */
+
+.additional-info{
+    
 }
