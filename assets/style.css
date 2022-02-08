@@ -131,6 +131,37 @@ main section .source a:focus{
     color:rgb(211, 4, 4);
 }
 
+/* Botoes */
 
+.buttons{
+    height: 110px;
+    margin-top:20px;
+    display:flex;
+    justify-content: space-between;
+    flex-flow:column nowrap;
+    align-content: center;
+    text-align: left;
+    border-radius: 2px;
+    
+}
+.active{
+    background-color: rgb(108, 47, 221) !important;
+}
+.buttons button{
+    padding:5px;
+    display:flex;
+    background-color:transparent;
+    border:1px solid rgba(255, 255, 255, 0.568);
+    color:white;
+}
 
-
+.buttons button div:first-child{
+    color:rgb(126, 126, 126);
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: 'Rajdhani', sans-serif;
+}
+.buttons button div{
+   
+    font-family: 'Rajdhani', sans-serif;
+}
