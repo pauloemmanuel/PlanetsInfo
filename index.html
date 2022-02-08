@@ -13,27 +13,27 @@
         <span class='title'>THE PLANETS</span>
 
         <nav>
-            <li class='earth'>Terra</li>
-            <li class='mart'>Marte</li>
-            <li class='venus'>Vênus</li>
-            <li class='saturno'>Saturno</li>
-            <li class='neptune'>Netuno</li>
-            <li class='jupiter'>Jupiter</li>
-            <li class='urano'>Urano</li>
-            <li class='mercury'>Mercúrio</li>
+            <li class='earth' onclick="trocarPlaneta('earth')">Terra</li>
+            <li class='mart' onclick="trocarPlaneta('mars')">Marte</li>
+            <li class='venus' onclick="trocarPlaneta('venus')">Vênus</li>
+            <li class='saturno' onclick="trocarPlaneta('saturn')">Saturno</li>
+            <li class='neptune' onclick="trocarPlaneta('neptune')">Netuno</li>
+            <li class='jupiter' onclick="trocarPlaneta('jupiter')">Jupiter</li>
+            <li class='urano' onclick="trocarPlaneta('uranus')">Urano</li>
+            <li class='mercury' onclick="trocarPlaneta('mercury')">Mercúrio</li>
         </nav>
     </header>
     <section>
         <main>
-            <div class='planet-image'></div>
+            <div class='planet-image' id="planeta"></div>
            
             <section>
-            <h2>Terra</h2>
-            <div class='description'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem lorem lorem ipsun upsinand typesetting industry. Lorem lorem lorem ipsun upsinand typesetting industry. Lorem lorem lorem ipsun upsinand typesetting industry. Lorem lorem lorem ipsun upsin
-            </div>
+            <h2 id="planet-name">Terra</h2>
+            <div class='description' id="planet-description">
+                A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do Sistema Solar. É também o maior dos quatro planetas telúricos. É por vezes designada como Mundo ou Planeta Azul. Lar de milhões de espécies de seres vivos,[13] incluindo os humanos, a Terra é o único corpo celeste onde é conhecida a existência de vida. O planeta formou-se há 4,56 bilhões de anos,[14][15][16][17] e a vida surgiu na sua superfície um bilhão de anos depois. Desde então, a biosfera terrestre alterou significativamente a atmosfera e outros fatores abióticos do planeta, permitindo a proliferação de organismos aeróbicos, bem como a formação de uma camada de ozônio, a qual, em conjunto com o campo magnético terrestre, bloqueia radiação solar prejudicial, permitindo a vida no planeta.[18] As propriedades físicas do planeta, bem como sua história geológica e órbita, permitiram que a vida persistisse durante este período. Acredita-se que a Terra poderá suportar vida durante pelo menos outros 500 milhões de anos.  
+                     </div>
  
-            <div class='source'>Fonte: <span><a href=''>Wikipedia</a></span></div>
+            <div class='source'>Fonte: <span><a target='_blank' href='https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal'>Wikipedia</a></span></div>
 
             <div class='buttons'>
                 <button class='active'><div>01</div> <div>Visão Geral</div></button>
@@ -48,8 +48,20 @@
     <section>
         <div class="additional-info">
             <div class="additional-info-item">
-                <div>Titulo</div>
-                <div>Informação</div>
+                <div class="additional-info-title">Tempo de rotação </div>
+                <div class="additional-info-data">1 DIA</div>
+            </div>
+            <div class="additional-info-item">
+                <div class="additional-info-title">Tempo de translação</div>
+                <div class="additional-info-data">365 DIAS</div>
+            </div>
+            <div class="additional-info-item">
+                <div class="additional-info-title">raio em Quilômetros</div>
+                <div class="additional-info-data">6,371 </div>
+            </div>
+            <div class="additional-info-item">
+                <div class="additional-info-title">Temperatura Média</div>
+                <div class="additional-info-data">16°C</div>
             </div>
             
         </div>

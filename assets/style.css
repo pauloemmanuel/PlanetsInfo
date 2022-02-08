@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
 
-:root{
-    
-    box-sizing: border-box;
-    font-family: 'Rajdhani', sans-serif;
-}
 
+
+
+::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 10px;
+    background-color: rgb(26, 5, 49);
+}
 body{
     background-image: url('./images/background-stars.svg');
     overflow-x: hidden;
     padding:0;
-    background-color: rgb(31, 9, 53);
+    background-color: rgb(0, 3, 34);
     margin:0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 section{
@@ -27,6 +31,7 @@ header{
     justify-content: space-between;
     margin-left:-8px;
     width: 100vw;
+    height: 70px;
     padding:10px;
     align-items: center;
     border-bottom: 1px solid rgb(199, 199,199);
@@ -122,7 +127,9 @@ main section h2{
 main section .description{
     font-size: 1rem;
     line-height:1.4rem;
-    text-align: left;                                   
+    text-align: left;   
+    overflow: auto;   
+    max-height: 120px;                             
     color:rgba(218, 218, 218, 0.925);
 }
 main section .source{
@@ -164,8 +171,10 @@ main section .source a:focus{
     text-transform: uppercase;
     font-size: 1rem;
     display:flex;
+    font-weight: 700;
+    letter-spacing: 2px;
     background-color:transparent;
-    border:1px solid rgba(255, 255, 255, 0.568);
+    border:1px solid rgb(32, 8, 73);
     color:white;
 }
 
@@ -184,5 +193,39 @@ main section .source a:focus{
 /* Parte de baixo */
 
 .additional-info{
+    display: flex;
+    width: 100%;
+    margin-top:50px;
+    justify-content: space-between;
+}
 
+.additional-info-item{
+    height: 100px;
+    min-height: calc( fit-content + 200px);
+    flex:1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    padding-bottom: 5px;
+    padding-left:15px;
+    padding-right: 15px;
+    margin:10px;
+   
+    border:1px solid rgb(32, 8, 73);
+  
+    margin-bottom:-20px;
+
+}
+
+.additional-info-title{
+    color:rgba(151, 148, 148, 0.925);
+    padding-top:20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.additional-info-data{
+    color:aliceblue;
+    font-size: 2.5rem;
+    
 }
