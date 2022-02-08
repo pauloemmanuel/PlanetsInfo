@@ -14,6 +14,12 @@ body{
     margin:0;
 }
 
+section{
+    width: 1024px;
+    max-width: 80vw;
+    margin:auto;
+}
+
 /* Estilo Header */
 header{
     color:rgb(199, 199, 199);
@@ -77,11 +83,10 @@ li:hover.mercury{
             
 /* Estilização da Main */
 main{
-    width: 1024px;
-   
+    
     margin:auto;
     color:white;
-    max-width: 80vw;
+   
     padding-top:60px;
     display:flex;
 
@@ -179,5 +184,5 @@ main section .source a:focus{
 /* Parte de baixo */
 
 .additional-info{
-    
+
 }
