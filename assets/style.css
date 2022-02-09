@@ -25,6 +25,7 @@ body{
 }
 
 section{
+ 
     width: 1024px;
     max-width: 80vw;
     margin:auto;
@@ -57,6 +58,7 @@ ul{
     padding-left: 50px;
 }
 li{
+
     list-style: none;
     padding:7px;
     cursor:pointer;
@@ -160,7 +162,7 @@ li:hover.mercury{
             
 /* Estilização da Main */
 main{
-    
+    transition:all ease 2s;
     margin:auto;
     color:white;
    
@@ -216,7 +218,7 @@ main section .description{
     line-height:1.4rem;
     text-align: left;   
     overflow: auto;   
-    max-height: 120px;                             
+    max-height: 120px;                       
     color:rgba(218, 218, 218, 0.925);
 }
 main section .source{
@@ -224,6 +226,7 @@ main section .source{
     line-height:1.2rem;
     text-align: left;
     margin-top:1rem;
+
     color:rgba(139, 139, 139, 0.925);
 }
 
@@ -287,6 +290,7 @@ main section .source a:focus{
 /* Parte de baixo */
 
 .additional-info{
+ 
     display: flex;
     width: 100%;
     margin-top:50px;
@@ -294,6 +298,7 @@ main section .source a:focus{
 }
 
 .additional-info-item{
+  
     height: 100px;
     min-height: calc( fit-content + 200px);
     flex:1;
@@ -312,6 +317,7 @@ main section .source a:focus{
 }
 
 .additional-info-title{
+ 
     color:rgba(151, 148, 148, 0.925);
     padding-top:20px;
     text-transform: uppercase;
@@ -319,6 +325,7 @@ main section .source a:focus{
 }
 
 .additional-info-data{
+   
     color:aliceblue;
     font-size: 2.5rem;
     
