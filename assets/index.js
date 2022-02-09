@@ -1,3 +1,4 @@
+let botaoSelecionado = 0;
 
 document.getElementById("planeta").animate([
   // keyframes
@@ -12,7 +13,14 @@ document.getElementById("planeta").animate([
 
 function trocarPlaneta(planeta){
   dadosPlaneta = banco_de_dados_imaginario[planeta];
+  if (botaoSelecionado == 0){
   document.getElementById('planeta').style.backgroundImage = 'url("./assets/images/planets/planet-'+planeta+'.svg")'
+  }else if(botaoSelecionado == 1){
+    document.getElementById('planeta').style.backgroundImage = 'url("./assets/images/internal-planets/planet-'+planeta+'-internal.svg")'
+  }else if (botaoSelecionado == 2){
+    document.getElementById('planeta').style.backgroundImage = 'url("./assets/images/geology/geology-'+planeta+'.svg")'
+  }
+
   document.getElementById('planet-name').innerText = dadosPlaneta.nome
   document.getElementById('planet-description').innerText = dadosPlaneta.descricao
 
@@ -28,8 +36,7 @@ function trocarPlaneta(planeta){
   }
     document.querySelector('#planet-temp').innerText = dadosPlaneta.temp + '°C'
     
-
-
+   document.querySelector('#planet-radio').innerText = dadosPlaneta.raio
 }
 
 
@@ -109,6 +116,6 @@ function Active(index){
      item.classList.toggle('active');
    }
   })
-  
+  botaoSelecionado = index-1;
   botaoUsado.classList += ' active'
   }
