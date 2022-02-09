@@ -171,7 +171,7 @@ main{
 
 .planet-image{
     flex:2;
-  
+    transition:all ease 1s;
      margin-top: 50px;
     margin-right: 20px;
     background-image: url('./images/planets/planet-earth.svg');
@@ -184,6 +184,7 @@ main{
     width: 150px;
     margin-left:calc(30%) ;
     margin-top:20%;
+    transition:all ease  0.5s;
    
     
 }
