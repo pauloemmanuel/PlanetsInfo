@@ -99,3 +99,27 @@ let banco_de_dados_imaginario = {
     temp:10
   }
 }
+
+function semiActive(index){
+let botoes = document.querySelectorAll('button');
+let botaoUsado = botoes[index-1];
+botoes.forEach((item)=>{
+ if( item.classList.contains('semi-active')){
+   item.classList.toggle('semi-active');
+ }
+})
+
+botaoUsado.classList += ' semi-active'
+}
+
+function Active(index){
+  let botoes = document.querySelectorAll('button');
+  let botaoUsado = botoes[index-1];
+  botoes.forEach((item)=>{
+   if( item.classList.contains('active')){
+     item.classList.toggle('active');
+   }
+  })
+  
+  botaoUsado.classList += ' active'
+  }
