@@ -13,7 +13,7 @@
         <span class='title'>THE PLANETS</span>
 
         <nav>
-            <li class='earth' onclick="trocarPlaneta('earth')">Terra</li>
+            <li class='earth select' onclick="trocarPlaneta('earth')">Terra</li>
             <li class='mart' onclick="trocarPlaneta('mars')">Marte</li>
             <li class='venus' onclick="trocarPlaneta('venus')">Vênus</li>
             <li class='saturno' onclick="trocarPlaneta('saturn')">Saturno</li>
@@ -25,7 +25,9 @@
     </header>
     <section>
         <main>
-            <div class='planet-image' id="planeta"></div>
+            <div class='planet-image' id="planeta">
+                <img class='hidden' id='imagem_ball' src='./assets/images/balls/earth-ball.svg'>
+            </div>
            
             <section>
             <h2 id="planet-name">Terra</h2>
@@ -55,7 +57,7 @@
             </div>
             <div class="additional-info-item">
                 <div class="additional-info-title">raio em Quilômetros</div>
-                <div class="additional-info-data" id='planet-radio'>6,371 </div>
+                <div class="additional-info-data" id='planet-radio'>6371 </div>
             </div>
             <div class="additional-info-item">
                 <div class="additional-info-title">Temperatura Média</div>

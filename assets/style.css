@@ -62,15 +62,80 @@ li{
     cursor:pointer;
     text-transform: uppercase;
 }
+li.earth.select{
+    background-image: url('./images/balls/earth-ball.svg');  
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size:0px;
+    width: 50px;
+}
+li.mart.select{
+    background-image: url('./images/balls/mars-ball.svg');
+    background-repeat: no-repeat;
+    background-size: contain;   
+    background-position: center;
+    font-size:0px;
+    width: 50px;
+}
+li.venus.select{
+    background-image: url('./images/balls/venus-ball.svg');
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     font-size:0px;
+     width: 50px;
+}
+li.saturno.select{
+    background-image: url('./images/balls/saturn-ball.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size:0px;
+    width: 50px;
+}
+li.neptune.select{
+    background-image: url('./images/balls/neptune-ball.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size:0px;
+    width: 50px;
+}
+li.jupiter.select{
+    background-image: url('./images/balls/jupiter-ball.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size:0px;
+    width: 50px;
+}
+li.urano.select{
+    background-image: url('./images/balls/uranus-ball.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size:0px;
+    width: 50px;
+}
+li.mercury.select{
+    background-image: url('./images/balls/mercury-ball.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size:0px;
+    width: 50px;
+}
 
 /* Estilização Hover do menu Nav */
 
 li:hover.earth{
     color:rgb(150, 255, 64);
+    
        }
 li:hover.mart{
-    color:rgb(223, 100, 91);
-       }
+    color:rgb(243, 151, 145);
+}
 
 li:hover.venus{
      color:rgb(248, 235, 193);
@@ -81,6 +146,7 @@ li:hover.saturno{
 
 li:hover.neptune{
      color:rgb(5, 184, 255);
+    
         }
 li:hover.jupiter{
      color:rgb(255, 218, 5);
@@ -89,7 +155,7 @@ li:hover.urano{
      color:rgb(34, 253, 242);
         }
 li:hover.mercury{
-    color:rgb(247, 132, 161);
+    color:rgb(250, 194, 240);
         }
             
 /* Estilização da Main */
@@ -112,6 +178,20 @@ main{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.planet-image img{
+    width: 150px;
+    margin-left:calc(30%) ;
+    margin-top:20%;
+   
+    
+}
+
+.planet-image img:hover{
+    width: 220px;
+    margin-left:calc(50% - 110px) ;
+    margin-top: 10%;
 }
 
 main section{
@@ -241,4 +321,8 @@ main section .source a:focus{
     color:aliceblue;
     font-size: 2.5rem;
     
+}
+
+.hidden{
+    display:none;
 }

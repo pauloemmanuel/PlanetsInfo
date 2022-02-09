@@ -1,4 +1,5 @@
 let botaoSelecionado = 0;
+let planetaSelecionado = 'earth';
 
 document.getElementById("planeta").animate([
   // keyframes
@@ -12,19 +13,27 @@ document.getElementById("planeta").animate([
 });
 
 function trocarPlaneta(planeta){
+  planetaSelecionado = planeta;
   dadosPlaneta = banco_de_dados_imaginario[planeta];
   if (botaoSelecionado == 0){
-  document.getElementById('planeta').style.backgroundImage = 'url("./assets/images/planets/planet-'+planeta+'.svg")'
+    document.getElementById('imagem_ball').classList = 'hidden';
+    document.getElementById('planeta').style.backgroundImage = 'url("./assets/images/planets/planet-'+planeta+'.svg")'
   }else if(botaoSelecionado == 1){
+    document.getElementById('imagem_ball').classList = 'hidden';
     document.getElementById('planeta').style.backgroundImage = 'url("./assets/images/internal-planets/planet-'+planeta+'-internal.svg")'
   }else if (botaoSelecionado == 2){
-    document.getElementById('planeta').style.backgroundImage = 'url("./assets/images/geology/geology-'+planeta+'.svg")'
+  let ball = document.getElementById('imagem_ball');
+    ball.classList = '';
+    ball.src = './assets/images/geology/geology-'+planeta+'.png';
+  
+    document.getElementById('planeta').style.backgroundImage = 'url("./assets/images/planets/planet-'+planetaSelecionado+'.svg")'
+    
   }
 
   document.getElementById('planet-name').innerText = dadosPlaneta.nome
   document.getElementById('planet-description').innerText = dadosPlaneta.descricao
 
-  if(document.querySelector('#planet-day').value === 1){
+  if(dadosPlaneta.rotationTime == 1){
     document.querySelector('#planet-day').innerText = dadosPlaneta.rotationTime + ' DIA'
   }else{
     document.querySelector('#planet-day').innerText = dadosPlaneta.rotationTime + ' DIAS'
@@ -44,10 +53,10 @@ let banco_de_dados_imaginario = {
   earth:{
     nome:'Terra',
     descricao:'A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do Sistema Solar. É também o maior dos quatro planetas telúricos. É por vezes designada como Mundo ou Planeta Azul. Lar de milhões de espécies de seres vivos,[13] incluindo os humanos, a Terra é o único corpo celeste onde é conhecida a existência de vida. O planeta formou-se há 4,56 bilhões de anos, e a vida surgiu na sua superfície um bilhão de anos depois. Desde então, a biosfera terrestre alterou significativamente a atmosfera e outros fatores abióticos do planeta, permitindo a proliferação de organismos aeróbicos, bem como a formação de uma camada de ozônio, a qual, em conjunto com o campo magnético terrestre, bloqueia radiação solar prejudicial, permitindo a vida no planeta.[18] As propriedades físicas do planeta, bem como sua história geológica e órbita, permitiram que a vida persistisse durante este período. Acredita-se que a Terra poderá suportar vida durante pelo menos outros 500 milhões de anos.',
-    rotationTime:10,
-    raio: 7188,
-    translationTime:210,
-    temp:10
+    rotationTime:1,
+    raio: 6371,
+    translationTime:365,
+    temp:16
   },
   venus:{
     nome:'Venus',
@@ -118,4 +127,17 @@ function Active(index){
   })
   botaoSelecionado = index-1;
   botaoUsado.classList += ' active'
+  trocarPlaneta(planetaSelecionado)
+
   }
+
+
+let naves = document.querySelectorAll('li').forEach((item)=>{
+  
+  item.addEventListener('click',(el)=>{
+    document.querySelectorAll('li').forEach(item => item.classList.remove('select'))
+    el.target.classList += ' select';
+ 
+  })
+  
+})
