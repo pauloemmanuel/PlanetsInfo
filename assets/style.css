@@ -8,6 +8,12 @@
     border-radius: 10px;
     background-color: rgb(26, 5, 49);
 }
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color:indigo;
+    border-radius:8px;
+}
+
 body{
     background-image: url('./images/background-stars.svg');
     overflow-x: hidden;
@@ -166,6 +172,11 @@ main section .source a:focus{
 .active{
     background-color: rgb(108, 47, 221) !important;
 }
+.semi-active{
+    background-color: rgba(108, 47, 221, 0.2) !important;
+}
+
+
 .buttons button{
     padding:12px;
     text-transform: uppercase;
@@ -176,6 +187,7 @@ main section .source a:focus{
     background-color:transparent;
     border:1px solid rgb(32, 8, 73);
     color:white;
+    cursor: pointer;
 }
 
 .buttons button div:first-child{
